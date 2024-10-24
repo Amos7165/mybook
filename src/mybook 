@@ -1,8 +1,8 @@
-//Here's a C program that defines a structure named `book`, initializes it with specific data, prints the values of its fields, and then prompts the user to enter the values for the fields.
 
 
-#include <stdio.h>
-#include <string.h>
+
+#include <stdio.h>//scanf(), printf()
+#include <string.h>//strcpy 
 
 // Define the structure
 struct book {
