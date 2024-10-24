@@ -37,20 +37,18 @@ int main() {
     printf("\nEnter Book Details:\n");
 
     printf("Title: ");
-    fgets(userBook.title, sizeof(userBook.title), stdin);
-    userBook.title[strcspn(userBook.title, "\n")] = 0; // Remove newline character
+    scanf(" %\n",userBook.title);
+    
 
-    printf("Author: ");
-    fgets(userBook.author, sizeof(userBook.author), stdin);
-    userBook.author[strcspn(userBook.author, "\n")] = 0; // Remove newline character
+    printf("Author:" ); scanf("%s\n",userBook.author);
+    
 
     printf("Publication Year: ");
     scanf("%d", &userBook.publication_year);
-    getchar(); // Consume newline character left by scanf
+    
 
     printf("ISBN: ");
-    fgets(userBook.ISBN, sizeof(userBook.ISBN), stdin);
-    userBook.ISBN[strcspn(userBook.ISBN, "\n")] = 0; // Remove newline character
+    scanf("%s\n",userBook.ISBN);
 
     printf("Price: ");
     scanf("%f", &userBook.price);
